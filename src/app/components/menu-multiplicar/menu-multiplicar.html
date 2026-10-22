@@ -1,0 +1,9 @@
+<ul>
+    @for (num of this.numeros; track $index) {
+        <li>
+            <a [routerLink]="['/tabla_multiplicar', num]">
+                Tabla de multiplicar de {{ num }}
+            </a>
+        </li>
+    }
+</ul>

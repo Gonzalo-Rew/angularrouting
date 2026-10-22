@@ -1,0 +1,15 @@
+<h1>Doble parámetro</h1>
+
+@for (item of numeros; track $index) {
+    <a [routerLink]="['/doble', $index + 5]">
+        Doble {{ $index + 5 }}
+    </a>
+    <br>
+}
+
+@if (numero) {
+  <h2>El doble del número {{ numero }} es {{ doble }}</h2>
+} @else {
+  <h2>No hemos recibido parámetros</h2>
+}
+<button (click)="irAHome()">Volver</button>

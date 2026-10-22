@@ -1,0 +1,15 @@
+<section class="tabla-container">
+  <h1>Model Binding</h1>
+  <h2>Versión 1</h2>
+  <ul class="tabla-lista">
+    @for (item of items; track item) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+  <h2>Versión 2</h2>
+  <div class="tabla-resultados">
+    @for (item of items; track item; let i = $index) {
+      <p>{{ numeroIntroducido }} * {{ i + 1 }} = {{ item }}</p>
+    }
+  </div>
+</section>
